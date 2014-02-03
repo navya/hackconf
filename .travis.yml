@@ -1,5 +1,43 @@
 language: ruby
 rvm:
-  - 2.0.0
   - 1.9.3
-script: bundle exec rake install; bundle exec rake generate
+before_script:
+  - git remote set-url origin $REPO
+  - git config --global user.name 'Vikraman Choudhury'
+  - git config --global user.email 'vikraman.choudhury@gmail.com'
+  - echo -n $id_rsa_{00..30} >> ~/.ssh/id_rsa_base64
+  - base64 --decode --ignore-garbage ~/.ssh/id_rsa_base64 > ~/.ssh/id_rsa
+  - chmod 600 ~/.ssh/id_rsa
+  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - bundle exec rake setup_github_pages[$REPO]
+  - git checkout -- _config.yml
+script:
+  - bundle exec rake generate
+after_script:
+  - bundle exec rake deploy
+env:
+  global:
+    - REPO="git@github.com:navya/hackconf.git"
+    - secure: "Wfaz7ReD7pbtIEdC6aeiTwglocTzthJ5Vw8G38qxM4QiGfDELKa0DvKebOJQDbOb6YeNu3m5Lu/yRWXiTGv8Ih+5ph97uLL/7FtTgEsgLHYPSLGPhyjlgVXKI57DpSuoRTNMIcRYmfJtuKV85rK3muF1d10IQXH7e6g8Gn3gLl8="
+    - secure: "insC9QWT164/UUsg3aef+Rg5IWTQInlIBxX7jH7PnJcX/aRe/MST6qisPhLwCiiff8wK5c27abCADc7qGug/Rq1FIIqP3QRSgrNgeE/GUymGnpd2iW0pDkZyjTAdOX0ddvyMTcfip71g2BMSeQdBteqLoxz5YaYns0OjTlutDTc="
+    - secure: "BFtwRkHAjCGPqpKHIlkkKuPJ1yzy2cxDiwvm52SfQ0L4wB2xkp2IrtSDpvP8gHMO1m068LPNkTFqfEjdltV9d389z6f0Jq+J2fNghIto+aL09EuhGDcieZ+AEZpG8g5OpuTDWkcSuW4yyj6gUNGUEANWckk+4Ags2vO2+QBRbIg="
+    - secure: "Nm7HVTw0oA8XG/KwD35Pde3+JoXB0ATJln0s6A4J5wz0y5mBSI8wScGRfDsWV9p8nfL0Lb+gBafyAecQAKf8xvJ2ygFkL77rpaoiFT7ghjeEVcPg8Wb157puUcFdYgi7s0FNbRtVaI9BnyqF6IGs0t3/7D8vA3GZw7PsU/XKPc4="
+    - secure: "DrJAHU4zY9UVMa32DqRlIQIb/Eyi7tyJy2tQEXpHnXKGBH+L5D4AQTMgP1yOvEZnNKE6N08sO2A15AN2LiaAS+41Y+vHMRDCPO//lHBawJRENhHH4C8NvwFoe8ve8A2VHHfjqImp38UkndjkK/m4c+gThypo3/4rbZih6Ttb25A="
+    - secure: "kEJ9g4k0NLsc9A6ATg6EfiPR2bxSdP8bw3BATgi6fQC7EeCAzwVpZU6pYuzQPLtcG2gbDUE/JF7U8lLf5iyEbvqwOl9ci6WGLAIzOAf7EymG7LYJf1uCN87ODaVzm1vTXZXMvnEttjfGKPVmhwD0a65KO98BXb89W33ckspORWM="
+    - secure: "jPSVRRUjfVwfB+o0oxq7sMYKgjviwS76B9V3+usN+74kx8TKYcQ5/fZkDNleJtAGq+xtbpCoUlF9aIPyf38Ydbf1+35cO2ex2MuR3XkQd3RDT2g2jGmDVaS/WNClmJT6w10hIgzC670bNKz+juW+NJz9bYELVCY4GxlA/7gAIS4="
+    - secure: "dFlbmixkYCfDD+ebHhdYwzlpQe+Rm1hyeArzkI5eIaUnytCh1KNpDOP8kioMDt4YkqArBryKLO+dNlUFGaQMj6ZBWu9R4Wpp0/LdrV+CuYOt+eWkqy6ZvfQuHIJ/JNbZ2/JbpigHrQFGUjmbi15KbxbEnD50sp6bZJw7P2tmOg0="
+    - secure: "XiWgCxSK73E0hoxHst4Wf6HwMNmHI+QYOsCi3/5QfDQDE7MeYMG8+WWr6BkW57VQY51RDCrTzs5ioEbqke+v0qY/7RR9px6W4fQwGPDh5NodQDHefjwp4S6fYPhMsXfgDVBLL9cgrKdzoWXHpbcz9fLeKEvRidigxq0xvMkWzNY="
+    - secure: "Hjy/BMvQYMA1xciL19yXUWuDUN90EoIzdVQ01LlC2j4aMiYLakKG67guUAm1gqFVeENKvtdK1pwoGYqZw3UZ4yYkOD+AanK+cNeWWcqvGlz9wO0fJdVmZWS5QxqlTgSoWyvqYEiUtA1XwW6Dr4bqoAbIVRtTG0nZdtaDiZyCPWw="
+    - secure: "La+EitmNHURdgD8Bjd8q5L9a9bvq+Qlp+sspv470IiVLR2TpMKiLDjZw5E1QufdXPKHPaMifi16FIp+FAXMMdEzKqbeA2IAkagbQ+noszGWpHVusAg47LJQHEAfPzJ1cVVCt8WD+FBfHVyk3woqkU4eCijRpdZaq90T9SdVeBkM="
+    - secure: "Mg+2hGM5h5QBh44wavG7xCbpmCc3deDGHjpi5DDbsT4cJmrmYaI9MACKPbzVK6G8JmM4ecOCksqxnglqmw9/Gg+x/q3o0D048SHKNovk8upoetW3QrV9zIOJFmqedXCLqghSlvhVGuhYkP7JJbce4WZELBgZ5dSHPamrIzTR3JE="
+    - secure: "dZJZ/Qx+omDy859vhhNTCKBMHO5O6+8Jn1fYPzqiddHRU0rNtPaQs0Gz7kfjPp4BKGhjBjJ1o1ZE2TeIL3DvVxuxE0ryxdln4sE/g0PShIHIyhzEu0sLl742jf7L9lmMIwuraebFYZnENZHPGYnDRHQLTiwuOXZmhM1INTIQJQI="
+    - secure: "aLZX+GVWuIdUYWxsARhERC/vXyDLYXUnFWpm9yUohtR2AowEqytgnLePdR77f+rvJG49I0S3zNv/80c6nMo4MYrXzxqsznHL2o8qhmj4BllPdfImPc47Ms0C2bcsTHRwtVVZCTEOCx4t92dvCboYihPmB83IB1Upg4f2xwEjnig="
+    - secure: "Nlz8vSSZkpTkB2zv2/5PQ8uV7g7NaGJZ9g2LJlZfE35+4rjb9CtoR2l0Ldp212Ys7GvPv0KDHJQBTitY4dH1Zy6elRkEw2TjBNNOn2+43kxYwynRrQ1ayLapQRZcxSF5+mojK1KLtabIaLdLg/NNu+j6AAaogSmLYOC01H1Dd7M="
+    - secure: "GY9h5a+RFNpM3CUyRu5+qHl5MsS+Jtcb1//bTjd4MlcYYtIEslO+ewSQZz8ds1/HQQEjU+lPU1j9lZwVEsGrTy93gwwO0ocvEQX6o6uj9rYuKBKu/hreMy0GOaeX6G/A8mTeYNJY0NWtH2xE7RO/sJJegW5AYbTsXVi4mxRSe1g="
+    - secure: "HeLWhKMK0iF+yxmMwvmdpNWFsqPDYr6T1DpiirX0B1sFFelNpxkdDSmgowALPI8dlwbuO72Mk/cygpbH3ivdmjdrL0y0y7kcqvkqL9C5qAwGTzzFeUeeV+5x4Vt3/Fon6763ypZMG83SbEoHQvDNHZCg8/YzFpeXL94rXRfJdlY="
+    - secure: "EhtdH1ZSgr8KLKWel2FWBlTEz18FGkGRM3OEZi2Un7IDXXofI/w9Q/W9ilStyfyxPi5kXY/gs/9H8lsVjb4d4bmVFWy+3M4XcrFHaCAWjmi5knbGbR8RA8UdtoQujeDYoZ7DB4H1dDjC/hQ1GwObqT6w+9gowN0BHv4VMZoe92w="
+    - secure: "BbHjnUvDGkMaNZFFqQqwpxJWYmSRdbi/MCfeCgjtGvSNxSQqMVETtguWWdamLUErjkn+2Yl5DBlUO8foUHTRMVUC70jNuEixf90qSsEBGp05Xhdbip+m9vbVhzTsXI8JbRcO4bDvbMjHAlE/tK26Hy7/HxBSUkv/QLbyQh4k6L8="
+    - secure: "iXMalsVAvmOX8cRF4gIcbOO1cOUvdUVh3CAwkh1OjuqmNeHr4mPqm7FAENWB7rywf4m/GjqznxLXn1+76jU+ULCJgUT+W6rvbVOBQtXYu+8Nmd3B7rG46maRy647TY1FHzKXbtPW4IUU+l4jWXiAJbTuxqeTQ+u7vkOJy8Gj6Pw="
+    - secure: "eu1llY+TKGAJMSaXWEMcVIWMElbrwLDl4QAuGDZX2O2r8cUgJKPAq2YzT1vV0ok82vr4691/kICMo6m+OOBIq4krOyqCKBtGh5T8rW/RVrbCfZkBSeDOzwVhh0QC1F7akQXvKDXIrSgQheKRSHXGtGG7Z0qEVryPuSQ+ziaA9zk="
+    - secure: "Gem8WQwFm/WInMz+LtKl6qRYw2UAG0XV8kgtLMzetrQBcsvlOKGllPJ5kXNwRcE16zWzbdho+d3DGJIRduzSMN1Odsf/dajx7Vuqrf7BiwrlqdMXpougrv8E5sfUQQ22mhZBJUsmNA0zF7vowtk9ZRlqsVfB3LguRtmatatRIKM="
+    - secure: "ghMqf/NCC30knoYXa+7HbTOZw2Bxom8EBrkfvgr1HCnwEAs3/XIeCtaxw8bAj66JAuKmmWricb0jLIXgCpzl8w1/IsHd5rLJD4rqNWsRjfjNJ7HsqK8b40tEUZubxtgAvhvJ1GtNkv5EmG+tn8RnIjr+p729USjNrihQ4QEJXV8="
