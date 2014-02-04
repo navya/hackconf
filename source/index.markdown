@@ -14,6 +14,7 @@ which the participants want to hear! The organizers are aware of the F/OSS
 scene in India and are working towards making it better by providing a platform
 for hackers to meet and collaborate.
 
+
 Mission
 ----
 The mission of HackConf is to make people aware of F/OSS and
