@@ -3,8 +3,8 @@ rvm:
   - 1.9.3
 before_script:
   - git remote set-url origin $REPO
-  - git config --global user.name 'Vikraman Choudhury'
-  - git config --global user.email 'vikraman.choudhury@gmail.com'
+  - git config --global user.name 'Build Bot'
+  - git config --global user.email 'build@hackconf.in'
   - echo -n $id_rsa_{00..30} >> ~/.ssh/id_rsa_base64
   - base64 --decode --ignore-garbage ~/.ssh/id_rsa_base64 > ~/.ssh/id_rsa
   - chmod 600 ~/.ssh/id_rsa
