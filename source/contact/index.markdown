@@ -1,6 +1,5 @@
 ---
 layout: page
-title: "Contact Us"
 sharing: true
 footer: true
 ---
