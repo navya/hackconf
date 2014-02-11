@@ -3,7 +3,11 @@ function getNav() {
   var mobileNav = $('fieldset.mobile-nav').append('<select>');
   mobileNav.find('select').append('<option value="">Navigate&hellip;</option>');
   var addOption = function(i, option) {
-    mobileNav.find('select').append('<option value="' + this.href + '">&raquo; ' + $(this).text() + '</option>');
+      if ($(this).text().length > 0) {
+        mobileNav.find('select').append('<option value="' + this.href + '">&raquo; ' + $(this).text() + '</option>');
+      } else {
+        mobileNav.find('select').append('<option value="' + this.href + '">&raquo; RSS</option>');
+      }
   }
   mainNav.find('a').each(addOption);
   $('ul.subscription a').each(addOption);

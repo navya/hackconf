@@ -1,11 +1,13 @@
+$header-img-bg: image-url('header.png') top left !default;
 body > header {
-  background: $header-bg;
+  background: $header-img-bg;
   h1 {
     display: inline-block;
     margin: 0;
     a, a:visited, a:hover {
       color: $title_color;
       text-decoration: none;
+      text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     }
   }
   h2 {
