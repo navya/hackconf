@@ -73,5 +73,4 @@ footer: true
 
 - Who are you guys?
 
-    We are a group of F/OSS enthusiasts. You can look us up on
-    [github](https://github.com/navya).
+    You can know more [here](/about).
