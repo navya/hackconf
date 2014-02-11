@@ -1,27 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://hackconf.in/blog/</loc>
-        <lastmod>2014-02-11T09:20:20+00:00</lastmod>
+        <loc>http://hackconf.in/robots.txt</loc>
+        <lastmod>2014-02-11T09:49:24+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hackconf.in/contactus.html</loc>
+        <lastmod>2014-02-11T09:49:24+00:00</lastmod>
     </url>
     <url>
         <loc>http://hackconf.in/blog/archives/</loc>
-        <lastmod>2014-02-11T09:20:20+00:00</lastmod>
+        <lastmod>2014-02-11T09:49:24+00:00</lastmod>
     </url>
     <url>
-        <loc>http://hackconf.in/</loc>
-        <lastmod>2014-02-11T09:20:20+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://hackconf.in/faq/</loc>
-        <lastmod>2014-02-11T09:20:20+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://hackconf.in/robots.txt</loc>
-        <lastmod>2014-02-11T09:20:20+00:00</lastmod>
+        <loc>http://hackconf.in/blog/</loc>
+        <lastmod>2014-02-11T09:49:24+00:00</lastmod>
     </url>
     <url>
         <loc>http://hackconf.in/about/</loc>
-        <lastmod>2014-02-11T09:20:20+00:00</lastmod>
+        <lastmod>2014-02-11T09:49:24+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hackconf.in/</loc>
+        <lastmod>2014-02-11T09:49:24+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hackconf.in/faq.html</loc>
+        <lastmod>2014-02-11T09:49:24+00:00</lastmod>
     </url>
 </urlset>
