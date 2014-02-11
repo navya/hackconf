@@ -17,7 +17,7 @@ before_script:
 script:
   - bundle exec rake generate
 after_script:
-  - bundle exec rake deploy
+  - bash -c '[ x"${TRAVIS_PULL_REQUEST}" == x"false" ] && bundle exec rake deploy'
 env:
   global:
     - REPO="git@github.com:navya/hackconf.git"
