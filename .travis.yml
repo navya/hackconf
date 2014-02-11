@@ -1,6 +1,9 @@
 language: ruby
 rvm:
   - 1.9.3
+branches:
+  only:
+    - master
 before_script:
   - git remote set-url origin $REPO
   - git config --global user.name 'Build Bot'
