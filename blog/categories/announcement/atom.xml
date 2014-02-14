@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[HackConf]]></title>
-  <link href="http://hackconf.in/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Announcement, | HackConf]]></title>
+  <link href="http://hackconf.in/blog/categories/announcement/atom.xml" rel="self"/>
   <link href="http://hackconf.in/"/>
   <updated>2014-02-14T05:57:52+00:00</updated>
   <id>http://hackconf.in/</id>
@@ -44,7 +44,7 @@ Github, please check it out and see if you can fix the issue! We understand
 that we might have missed some very basic things, since it is our first attempt
 at hosting such a conference, which the experienced amongst you can let us know
 by opening up an issue. We have set up
-<a href="http://hackconf.in/contact/">community interaction tools</a> on various platforms, feel free to
+<a href="/contact/">community interaction tools</a> on various platforms, feel free to
 join the discussion on any of the platforms. We are almost always available on
 <a href="irc://irc.freenode.net/hackconf">irc</a> and
 <a href="http://lists.hackconf.in/">mailing lists</a>! Looking forward for a successful
