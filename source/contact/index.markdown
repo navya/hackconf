@@ -12,7 +12,7 @@ or irc.
 --  [Mailing lists](https://lists.hackconf.in)<br/>
 --  [IRC (#hackconf)](https://webchat.freenode.net?channels=hackconf)<br/>
 --  [Twitter](https://twitter.com/_hackconf)<br/>
---  [Google+](http://gplus.to/hackconf)<br/>
+--  [Google+](https://google.com/+hackconfin)<br/>
 --  [Facebook](https://fb.me/hackconf)<br/>
 
 Also feel free to submit any feedback/comments using the form below.
