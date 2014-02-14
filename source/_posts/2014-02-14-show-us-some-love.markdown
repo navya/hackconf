@@ -4,7 +4,7 @@ title: "Show us some love!"
 date: 2014-02-14 10:22:03 +0530
 comments: true
 sharing: true
-categories: announcement, hello
+categories: announcement hello
 ---
 What better day than the Valentine’s to ask for love! Today we are doing our
 first public announcement and asking the community to help us out. We are self
