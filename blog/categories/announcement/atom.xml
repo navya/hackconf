@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Announcement, | HackConf]]></title>
+  <title><![CDATA[Category: Announcement | HackConf]]></title>
   <link href="http://hackconf.in/blog/categories/announcement/atom.xml" rel="self"/>
   <link href="http://hackconf.in/"/>
-  <updated>2014-02-14T06:25:01+00:00</updated>
+  <updated>2014-02-14T06:29:41+00:00</updated>
   <id>http://hackconf.in/</id>
   <author>
     <name><![CDATA[Navya]]></name>
