@@ -9,7 +9,7 @@ footer: true
 ### What is HackConf?
 See [Introduction](/#Introduction)
 
-### I am a &lt;insert_some_role_here>. Should I attend the conference? What does it offer me?
+### I am a <insert_some_role_here>. Should I attend the conference? What does it offer me?
 If you're reading this, yes, you should.
 
 ### Who are the speakers and what topics are they speaking on ?
@@ -29,8 +29,8 @@ To be decided.
 Probably yes.
 
 ### How do I reach the venue?
-  See
-  [how to reach IIT Kanpur](http://cse.iitk.ac.in/links/howtoreach.html).
+See
+[how to reach IIT Kanpur](http://cse.iitk.ac.in/links/howtoreach.html).
 
 ### Can I come and take a session?
 Yes, please reach out to us beforehand.
@@ -44,16 +44,10 @@ note, that we **do not** support any proprietary propaganda. Please
 revert to us for details.
 
 ### How do I reach out to the organizers?
-Via one of the following. Our preferred medium is email.  
--  [Email](mailto:organizers@hackconf.in)  
--  [Mailing lists](https://lists.hackconf.in)  
--  [IRC (#hackconf)](https://webchat.freenode.net?channels=hackconf)  
--  [Twitter](https://twitter.com/_hackconf)  
--  [Google+](http://gplus.to/hackconf)  
--  [Facebook](https://fb.me/hackconf)  
+Please see our [Contact Us](/contact/) page.
 
 ### I am an outstation participant. Will I be provided accommodation?
 We'll provide pointers for accomodation nearby.
 
 ### Who are you guys?
-You can know more [here](/about).
+You can know more [here](/about/).
