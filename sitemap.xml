@@ -2,34 +2,34 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://hackconf.in/blog/2014/02/14/show-us-some-love/</loc>
-        <lastmod>2014-02-14T08:05:19+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://hackconf.in/faq/</loc>
-        <lastmod>2014-02-14T08:05:19+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://hackconf.in/</loc>
-        <lastmod>2014-02-14T08:05:19+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://hackconf.in/robots.txt</loc>
-        <lastmod>2014-02-14T08:05:19+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://hackconf.in/about/</loc>
-        <lastmod>2014-02-14T08:05:19+00:00</lastmod>
-    </url>
-    <url>
-        <loc>http://hackconf.in/contact/</loc>
-        <lastmod>2014-02-14T08:05:19+00:00</lastmod>
+        <lastmod>2014-02-14T08:11:20+00:00</lastmod>
     </url>
     <url>
         <loc>http://hackconf.in/blog/</loc>
-        <lastmod>2014-02-14T08:05:19+00:00</lastmod>
+        <lastmod>2014-02-14T08:11:20+00:00</lastmod>
     </url>
     <url>
         <loc>http://hackconf.in/blog/archives/</loc>
-        <lastmod>2014-02-14T08:05:19+00:00</lastmod>
+        <lastmod>2014-02-14T08:11:20+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hackconf.in/contact/</loc>
+        <lastmod>2014-02-14T08:11:20+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hackconf.in/robots.txt</loc>
+        <lastmod>2014-02-14T08:11:20+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hackconf.in/about/</loc>
+        <lastmod>2014-02-14T08:11:20+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hackconf.in/faq/</loc>
+        <lastmod>2014-02-14T08:11:20+00:00</lastmod>
+    </url>
+    <url>
+        <loc>http://hackconf.in/</loc>
+        <lastmod>2014-02-14T08:11:20+00:00</lastmod>
     </url>
 </urlset>
