@@ -9,7 +9,7 @@ Please feel free to reach out to us via one of the following. We prefer email
 or irc.
 
 --  [Email](mailto:organizers@hackconf.in)<br/>
---  [Mailing lists](https://lists.hackconf.in)<br/>
+--  [Mailing lists](http://lists.hackconf.in)<br/>
 --  [IRC (#hackconf)](https://webchat.freenode.net?channels=hackconf)<br/>
 --  [Twitter](https://twitter.com/_hackconf)<br/>
 --  [Google+](https://google.com/+hackconfin)<br/>
